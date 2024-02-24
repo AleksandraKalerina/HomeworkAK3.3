@@ -1,10 +1,10 @@
 public class CreditPayment {
 
-    public double calculate(double s, double r, double n) {
+    public double calculate(double summa, double percent, double term) {
         double calculate;
-        r = r / 12 / 100;
-        n = n * 12;
-        calculate = s * ((r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1));
+        percent = percent / 12 / 100;;
+        term = term * 12;
+        calculate = summa * ((percent * Math.pow((1 + percent), term)) / (Math.pow((1 + percent), term) - 1));
         return calculate;
 
     }
